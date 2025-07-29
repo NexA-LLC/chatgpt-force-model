@@ -21,6 +21,11 @@
       const model = result.selectedModel || 'gpt-4';
       const currentUrl = new URL(window.location.href);
       
+      // Prevent adding model parameter to conversation URLs
+      if (currentUrl.pathname.includes('/c/') || currentUrl.pathname.includes('/g/')) {
+        return;
+      }
+      
       if (!currentUrl.searchParams.has('model')) {
         currentUrl.searchParams.set('model', model);
         window.location.replace(currentUrl.href);

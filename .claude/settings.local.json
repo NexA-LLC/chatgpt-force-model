@@ -1,7 +1,19 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(jj git push:*)",
+      "Bash(jj git init:*)",
+      "Bash(convert:*)",
+      "Bash(rsvg-convert:*)",
+      "Bash(rm:*)",
+      "Bash(jj add:*)",
+      "Bash(jj status:*)",
+      "Bash(jj describe:*)",
+      "Bash(jj bookmark:*)",
+      "Bash(zip:*)",
+      "Bash(mkdir:*)",
+      "Bash(./build.sh)"
     ],
     "deny": []
   }
