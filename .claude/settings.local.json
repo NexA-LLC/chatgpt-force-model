@@ -13,7 +13,8 @@
       "Bash(jj bookmark:*)",
       "Bash(zip:*)",
       "Bash(mkdir:*)",
-      "Bash(./build.sh)"
+      "Bash(./build.sh)",
+      "Bash(jj branch create:*)"
     ],
     "deny": []
   }

@@ -39,9 +39,11 @@ Chrome Web Store に提出するためのパッケージを作成：
 ./build.sh
 ```
 
-これにより以下のファイルが生成されます：
-- `chatgpt-force-model-submission.zip` - Chrome Web Store にアップロードするファイル
-- `chatgpt-force-model-source.zip` - ソースコードアーカイブ
+これにより`releases/`フォルダに以下のファイルが生成されます：
+- `chatgpt-force-model-v{version}-submission-{timestamp}.zip` - Chrome Web Store にアップロードするファイル
+- `chatgpt-force-model-v{version}-source-{timestamp}.zip` - ソースコードアーカイブ
+- `latest-submission.zip` - 最新の提出用ファイルへのシンボリックリンク
+- `latest-source.zip` - 最新のソースコードへのシンボリックリンク
 
 ### Chrome Web Store への申請フロー
 
@@ -54,7 +56,7 @@ Chrome Web Store に提出するためのパッケージを作成：
 
 3. 「新しいアイテム」をクリック
 
-4. `chatgpt-force-model-submission.zip` をアップロード
+4. `releases/`フォルダから最新の`submission`ファイルをアップロード
 
 5. 以下の情報を入力：
    - **名前**: ChatGPT Model Selector
