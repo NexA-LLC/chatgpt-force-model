@@ -14,7 +14,8 @@
       "Bash(zip:*)",
       "Bash(mkdir:*)",
       "Bash(./build.sh)",
-      "Bash(jj branch create:*)"
+      "Bash(jj branch create:*)",
+      "Bash(git push:*)"
     ],
     "deny": []
   }
