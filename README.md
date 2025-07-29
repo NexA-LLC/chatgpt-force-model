@@ -31,50 +31,9 @@ ChatGPTで使用するモデルを自動的に選択するChrome拡張機能
 
 ## 開発者向け
 
-### ビルド方法
+### Chrome Web Store への申請
 
-Chrome Web Store に提出するためのパッケージを作成：
-
-```bash
-./build.sh
-```
-
-これにより`releases/`フォルダに以下のファイルが生成されます：
-- `chatgpt-force-model-v{version}-submission-{timestamp}.zip` - Chrome Web Store にアップロードするファイル
-- `chatgpt-force-model-v{version}-source-{timestamp}.zip` - ソースコードアーカイブ
-- `latest-submission.zip` - 最新の提出用ファイルへのシンボリックリンク
-- `latest-source.zip` - 最新のソースコードへのシンボリックリンク
-
-### Chrome Web Store への申請フロー
-
-1. ビルドスクリプトを実行
-   ```bash
-   ./build.sh
-   ```
-
-2. [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole/) にアクセス
-
-3. 「新しいアイテム」をクリック
-
-4. `releases/`フォルダから最新の`submission`ファイルをアップロード
-
-5. 以下の情報を入力：
-   - **名前**: ChatGPT Model Selector
-   - **概要**: ChatGPTで使用するモデルを自動的に選択
-   - **カテゴリ**: 生産性向上
-   - **言語**: 日本語
-   - **説明文**: 詳細な説明を記入
-   - **スクリーンショット**: 最低1枚（1280x800 or 640x400）
-   - **アイコン**: 128x128（既に含まれている）
-   - **プライバシーポリシー**: 必須
-
-6. プライバシーポリシーの例：
-   ```
-   本拡張機能はユーザーの選択したモデル設定のみをブラウザのローカルストレージに保存します。
-   個人情報の収集、外部サーバーへの送信は一切行いません。
-   ```
-
-7. 審査に提出（通常1-3営業日）
+この拡張機能をChrome Web Storeに申請する場合は、[申請ガイド](docs/SUBMISSION_GUIDE.md)を参照してください。
 
 ### ファイル構成
 
@@ -89,7 +48,9 @@ chatgpt-force-model/
 ├── icon128.png        # 128x128 アイコン
 ├── build.sh           # ビルドスクリプト
 ├── .gitignore         # Git除外設定
-└── README.md          # このファイル
+├── README.md          # このファイル
+└── docs/
+    └── SUBMISSION_GUIDE.md  # Chrome Web Store 申請ガイド
 ```
 
 ## ライセンス
