@@ -22,6 +22,7 @@ cp manifest.json dist/
 cp content.js dist/
 cp options.html dist/
 cp options.js dist/
+cp shared.js dist/
 cp icon*.png dist/
 
 # Get version from manifest.json

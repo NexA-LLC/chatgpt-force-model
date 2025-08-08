@@ -3,7 +3,8 @@
 
   function appendModelParameter() {
     chrome.storage.sync.get(['selectedModel'], function(result) {
-      const model = result.selectedModel || 'gpt-4';
+      const fallbackModel = (typeof window !== 'undefined' && window.DEFAULT_MODEL) ? window.DEFAULT_MODEL : 'gpt-5-thinking';
+      const model = result.selectedModel || fallbackModel;
       const currentUrl = new URL(window.location.href);
       
       if (!currentUrl.searchParams.has('model')) {
@@ -18,7 +19,8 @@
 
   function checkAndRedirect() {
     chrome.storage.sync.get(['selectedModel'], function(result) {
-      const model = result.selectedModel || 'gpt-4';
+      const fallbackModel = (typeof window !== 'undefined' && window.DEFAULT_MODEL) ? window.DEFAULT_MODEL : 'gpt-5-thinking';
+      const model = result.selectedModel || fallbackModel;
       const currentUrl = new URL(window.location.href);
       
       // Prevent adding model parameter to conversation URLs

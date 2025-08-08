@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "ChatGPT Model Selector",
-  "version": "1.0",
+  "version": "1.2",
   "description": "Automatically append model parameter to ChatGPT URLs",
   "permissions": [
     "storage",
@@ -13,7 +13,7 @@
   "content_scripts": [
     {
       "matches": ["https://chatgpt.com/*"],
-      "js": ["content.js"],
+      "js": ["shared.js", "content.js"],
       "run_at": "document_start"
     }
   ],

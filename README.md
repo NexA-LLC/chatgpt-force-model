@@ -6,7 +6,7 @@ ChatGPTで使用するモデルを自動的に選択するChrome拡張機能
 
 - ChatGPT (chatgpt.com) にアクセスした際、URLに自動的にモデルパラメータを追加
 - デフォルトモデルを設定画面から選択可能
-- 対応モデル: GPT-4, GPT-4 Turbo, GPT-3.5 Turbo, o1, o1-preview, o1-mini, o3, o3-mini
+- 対応モデル: GPT-5 Thinking, GPT-5 Pro, GPT-5, GPT-4, GPT-4 Turbo, GPT-3.5 Turbo, o1, o1-preview, o1-mini, o3, o3-mini
 
 ## インストール方法
 
