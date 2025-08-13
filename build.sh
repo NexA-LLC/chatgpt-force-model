@@ -20,6 +20,7 @@ mkdir -p releases
 echo "📋 Copying extension files..."
 cp manifest.json dist/
 cp content.js dist/
+cp background.js dist/
 cp options.html dist/
 cp options.js dist/
 cp shared.js dist/
