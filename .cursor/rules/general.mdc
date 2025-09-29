@@ -1,0 +1,9 @@
+# General Rules
+
+- Context usage: keep ingestion minimal; target only relevant files/lines. Avoid large refactors and reflow; prefer safe, reviewable diffs.
+- Non-goals: wholesale reformatting, large renames/moves, policy changes.
+- Editing: preserve existing style (headings, bullets, fences). Do not alter whitespace-only lines except to remove trailing spaces.
+- Reads: prefer `rg` for search and read files in ≤250-line chunks.
+- Commands: use non-interactive flags; avoid destructive ops. Long/expensive jobs SHOULD run in background or be batched; provide brief preambles.
+- Wording: when clarifying, MAY use RFC 2119 terms without changing intent.
+
